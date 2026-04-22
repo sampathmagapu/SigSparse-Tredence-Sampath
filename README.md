@@ -142,19 +142,3 @@ python experiments/lambda_sweep.py
 This project is for educational and research purposes.
 
 ```
-
----
-
-## Brutal feedback (don’t ignore this)
-- This is **good enough to submit**
-- But not enough to **stand out**
-
-If you want this repo to actually impress:
-- Add **visual plots (images, not just code)**
-- Add **ablation: L1 on g vs σ(g)**
-- Add **one improvement idea implemented**
-
----
-
-If you want, I can upgrade this into a **top-tier repo (readme + visuals + structure + recruiter-level polish)**.
-```
