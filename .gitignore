@@ -1,0 +1,42 @@
+# Create .gitignore to exclude unnecessary files
+cat > .gitignore << EOF
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+prune_env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/
+
+# Model files (if large)
+*.pth
+*.pt
+*.bin
+
+# Data files
+*.npy
+*.npz
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+EOF
