@@ -3,7 +3,7 @@ Feature gating with L1-regularized sigmoid gates for soft sparsity. Includes exp
 ```
 
 
-# L1-Regularized Sigmoid Gating for Feature Sparsity
+# SigSparse - L1-Regularized Sigmoid Gating for Feature Sparsity
 
 ## Overview
 This project explores a feature gating mechanism where each input feature is modulated using a learnable sigmoid gate. An L1 regularization term is applied to the gate activations to encourage sparsity.
