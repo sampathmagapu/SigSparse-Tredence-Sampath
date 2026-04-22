@@ -11,7 +11,10 @@ import math
 from PIL import Image
 import matplotlib.pyplot as plt
 
-BASE_PATH = r"D:\AI_Field\Deep_Learning_projects\SigSparse\save_data"
+# ----------------------------------------------------------------------
+# 1. BASE PATH – updated to match your Git repo structure
+# ----------------------------------------------------------------------
+BASE_PATH = r"D:\AI_Field\Deep_Learning_projects\SigSparse\SigSparse-Tredence-Sampath\save_data"
 
 # ----------------- Model definition (same as before) -----------------
 class PrunableLinear(nn.Module):
@@ -69,7 +72,6 @@ def load_results():
     return pd.DataFrame(data)
 
 def load_gates(lambda_value):
-    # Use string representation exactly as in file names
     lam_str = str(lambda_value)   # "0.0", "1e-05", "5e-05", "0.0001", "0.0002"
     filename = f"gates_lambda_{lam_str}.npy"
     filepath = os.path.join(BASE_PATH, "gates", filename)
