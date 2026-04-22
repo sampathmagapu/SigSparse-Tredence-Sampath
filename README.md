@@ -1,6 +1,8 @@
-# SelfPruningModel-Tredence-Sampath
+```
 Feature gating with L1-regularized sigmoid gates for soft sparsity. Includes experiments on lambda tuning, performance vs sparsity trade-offs, and gate distribution analysis.
+```
 
+````markdown
 # L1-Regularized Sigmoid Gating for Feature Sparsity
 
 ## Overview
@@ -82,3 +84,77 @@ plt.title("Gate Value Distribution")
 plt.xlabel("Gate Value")
 plt.ylabel("Frequency")
 plt.show()
+````
+
+---
+
+## Project Structure
+
+```
+.
+├── data/                # Dataset (if applicable)
+├── models/              # Model definitions
+├── experiments/         # Training scripts & lambda tuning
+├── plots/               # Gate distribution visualizations
+├── results/             # Logs and outputs
+└── README.md
+```
+
+---
+
+## How to Run
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Train model
+python train.py
+
+# Run experiments
+python experiments/lambda_sweep.py
+```
+
+---
+
+## Key Takeaways
+
+* L1 on sigmoid gates induces **feature importance ranking**, not strict selection
+* Proper λ tuning is critical
+* True sparsity requires alternative approaches like:
+
+  * L0 regularization
+  * Hard-concrete gates
+  * Thresholding
+
+---
+
+## Author
+
+**Sampath Magapu**
+📧 [sampathmagapu11@gmail.com](mailto:sampathmagapu11@gmail.com)
+🌐 [https://sampathmagapu.github.io/SampathM_Portfolio/](https://sampathmagapu.github.io/SampathM_Portfolio/)
+
+---
+
+## License
+
+This project is for educational and research purposes.
+
+```
+
+---
+
+## Brutal feedback (don’t ignore this)
+- This is **good enough to submit**
+- But not enough to **stand out**
+
+If you want this repo to actually impress:
+- Add **visual plots (images, not just code)**
+- Add **ablation: L1 on g vs σ(g)**
+- Add **one improvement idea implemented**
+
+---
+
+If you want, I can upgrade this into a **top-tier repo (readme + visuals + structure + recruiter-level polish)**.
+```
